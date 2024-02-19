@@ -1,0 +1,18 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "type": "true-false",
+    "question": "The sky is blue.",
+    "answer": "true"
+  },
+  {
+    "type": "short-answer",
+    "question": "Name a programming language that's also a gem.",
+    "answers": ["Ruby"]
+  }
+]
