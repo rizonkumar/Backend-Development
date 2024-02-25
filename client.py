@@ -11,3 +11,6 @@ client_socket = socket.socket()
 client_socket.connect((HOST, PORT)) # client need to connect to the server client
 
 client_socket.sendall(b"hello from the client 1")
+
+response_from_server = client_socket.recv(2048)
+print(response_from_server)
