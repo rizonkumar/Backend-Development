@@ -4,6 +4,8 @@ import threading
 
 def connect_a_client(conn, addr):
     print("New client has been connnected")
+    data = conn.recv(2048)
+    print("Data received from client is:", data)
 
 HOST = "localhost"
 
