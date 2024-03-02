@@ -1,5 +1,5 @@
 {
-  "name": "first-express-app",
+  "name": "todoapisetup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rizon kumar rahi",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.3"
-  }
+  "license": "ISC"
 }
