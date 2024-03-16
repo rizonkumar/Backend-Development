@@ -1,12 +1,15 @@
 const express = require("express");
-const router = require("./routes");
-const customRouter = require("./routes/customrouter");
+const apirouter = require("./routes");
 const { PORT } = require("./config/server.config");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-app.use("/api", router); // localhost:3000/api/home
-app.use("/custom", customRouter); // localhost:3000/custom
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.text());
+
+app.use("/api", apirouter); // localhost:3000/api/v1/ping
 
 app.listen(PORT, () => {
   console.log(`Started server at port: ${PORT}`);
